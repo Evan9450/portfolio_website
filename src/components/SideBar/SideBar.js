@@ -2,13 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import { SideBarWrapper, StyledHamburgerButton, StyledMenu } from './style';
 
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+import { KEY_CODES } from '../utilities';
+import Link from 'next/link';
 import { navLinks } from '../../config';
-
-// import { KEY_CODES } from "../utilities"
-
-
-// import { useOnClickOutside } from "../hooks"
+import { useOnClickOutside } from '../hooks';
 
 // import { Link } from 'gatsby';
 
@@ -111,9 +108,11 @@ const SideBar = () => {
 							<ol>
 								{navLinks.map(({ url, name }, i) => (
 									<li key={i}>
-										<Link to={url} onClick={() => setMenuOpen(false)}>
+										{/* expected Link here */}
+										{/* TODO */}
+										<a href={url} onClick={() => setMenuOpen(false)}>
 											{name}
-										</Link>
+										</a>
 									</li>
 								))}
 							</ol>

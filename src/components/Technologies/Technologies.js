@@ -5,7 +5,7 @@ import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles
 import React from 'react';
 
 const Technologies = () => (
-	<Section id="tech">
+	<Section id="tech" nopadding>
 		<SectionDivider divider />
 		<SectionTitle>Technologies</SectionTitle>
 		<SectionText>

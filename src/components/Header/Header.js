@@ -11,6 +11,7 @@ import {
 	NavItemBtn,
 	NavLink,
 	NavLinks,
+	NavLogo,
 	NavMenu,
 	NavbarContainer,
 	StyledHeader,
@@ -22,6 +23,7 @@ import { DiDigitalOcean } from 'react-icons/di';
 import Icon from '../icons/Icon';
 import { IconContext } from 'react-icons/lib';
 import Link from 'next/link';
+import SideBar from '../SideBar/SideBar';
 import { navLinks } from '../../config';
 
 const Header = () => {
@@ -33,13 +35,15 @@ const Header = () => {
 	return (
 		<StyledHeader>
 			<NavbarContainer>
-				<Div1>
-					<Link href="/">
-						<a style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
-							<AiOutlineFire size="3rem" color="red" /> <span>Evan</span>
-						</a>
-					</Link>
-				</Div1>
+				{/* <Div1> */}
+				<NavLogo href="/">
+					{/* <Link> */}
+					<a style={{ display: 'flex', alignItems: 'center', color: 'white', size: '3rem' }}>
+						<AiOutlineFire size="3rem" color="red" /> <span>Evan</span>
+					</a>
+					{/* </Link> */}
+				</NavLogo>
+				{/* </Div1> */}
 				{/* <Div2>
 				<li>
 					<Link href="#projects">
@@ -84,6 +88,11 @@ const Header = () => {
 						)}
 					</NavItemBtn>
 				</NavMenu>
+				<TransitionGroup component={null}>
+					<CSSTransition>
+						<SideBar />
+					</CSSTransition>
+				</TransitionGroup>
 			</NavbarContainer>
 		</StyledHeader>
 	);
