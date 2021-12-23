@@ -1,48 +1,92 @@
-import Link from 'next/link';
-import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineFire } from 'react-icons/ai';
+import {
+	Button,
+	Container,
+	Div1,
+	Div2,
+	Div3,
+	Nav,
+	NavBtnLink,
+	NavItem,
+	NavItemBtn,
+	NavLink,
+	NavLinks,
+	NavMenu,
+	NavbarContainer,
+	StyledHeader,
+} from './HeaderStyles';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import React, { useEffect, useState } from 'react';
+
 import { DiDigitalOcean } from 'react-icons/di';
+import Icon from '../icons/Icon';
+import { IconContext } from 'react-icons/lib';
+import Link from 'next/link';
+import { navLinks } from '../../config';
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
+const Header = () => {
+	const [click, setClick] = useState(false);
 
-const Header = () =>  (
-  <Container>
-    <Div1>
-      <Link href="/">
-        <a style={{ display: 'flex', alignItems: 'center', color:"white" }}>
-          <AiOutlineFire size="3rem" color="red" /> <span>Evan</span>
-        </a>
-      </Link>
-    </Div1>
-    <Div2>
-      <li>
-        <Link href="#projects">
-          <NavLink>Projects</NavLink>
-        </Link>
-      </li>
-      <li>
-        <Link href="#tech">
-          <NavLink>Technologies</NavLink>
-        </Link>
-      </li>        
-      <li>
-        <Link href="#about">
-          <NavLink>About</NavLink>
-        </Link>
-      </li>        
-    </Div2>
-      <Div3>
-        <SocialIcons href="https://google.com">
-          <AiFillGithub size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://google.com">
-          <AiFillLinkedin size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://google.com">
-          <AiFillInstagram size="3rem"/>
-        </SocialIcons>
-      </Div3>
-    </Container>
-);
+	const [button, setButton] = useState(true);
+	const [menuOpen, setMenuOpen] = useState(false);
+
+	return (
+		<StyledHeader>
+			<NavbarContainer>
+				<Div1>
+					<Link href="/">
+						<a style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
+							<AiOutlineFire size="3rem" color="red" /> <span>Evan</span>
+						</a>
+					</Link>
+				</Div1>
+				{/* <Div2>
+				<li>
+					<Link href="#projects">
+						<NavLink>Projects</NavLink>
+					</Link>
+				</li>
+				<li>
+					<Link href="#tech">
+						<NavLink>Technologies</NavLink>
+					</Link>
+				</li>
+				<li>
+					<Link href="#about">
+						<NavLink>About</NavLink>
+					</Link>
+				</li>
+			</Div2> */}
+				<NavMenu click={click} menuOpen={menuOpen}>
+					{navLinks &&
+						navLinks.map(({ url, name }, i) => (
+							<CSSTransition key={i}>
+								<NavItem key={i}>
+									<NavLinks href={url}>{name}</NavLinks>
+								</NavItem>
+							</CSSTransition>
+						))}
+					<NavItemBtn>
+						{button ? (
+							<NavBtnLink to="../../static/resume.pdf">
+								<Button primary>Resume</Button>
+							</NavBtnLink>
+						) : (
+							<NavBtnLink to="../../static/resume.pdf">
+								<Button
+									// onClick={closeMobileMenu}
+									fontBig
+									primary
+								>
+									Resume
+								</Button>
+							</NavBtnLink>
+						)}
+					</NavItemBtn>
+				</NavMenu>
+			</NavbarContainer>
+		</StyledHeader>
+	);
+};
 
 export default Header;
