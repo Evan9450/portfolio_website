@@ -45,7 +45,9 @@ export const StyledHeader = styled.header`
 export const NavbarContainer = styled(Container)`
 	display: flex;
 	justify-content: space-between;
-	height: 80px;
+	position: relative;
+
+	/* height: 80px; */
 	padding: 0 0;
 
 	${Container}
@@ -62,13 +64,16 @@ export const Div1 = styled.div`
 
 export const NavLogo = styled.a`
 	color: #fff;
-	justify-self: flex-start;
+	/* justify-self: flex-start; */
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 1.8rem;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	&:hover {
+
+	&:hover,
+	&:focus {
 		color: #ff0000;
 	}
 `;

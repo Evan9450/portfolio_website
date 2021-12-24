@@ -30,3 +30,34 @@ export const LeftSection = styled.div`
 		margin: 0 auto;
 	}
 `;
+
+export const GetInTouch = styled.a`
+	color: #ff0000;
+	background-color: transparent;
+	border: 1px solid #ff0000;
+	border-radius: 4px;
+	display: inline-block;
+	position: relative;
+	padding: 1.25rem 1.75rem;
+	font-size: 14px;
+
+	/* font-family: var(--font-mono); */
+	line-height: 1;
+	text-decoration: none;
+	text-decoration-skip-ink: auto;
+	cursor: pointer;
+	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+	&:hover,
+	&:focus,
+	&:active {
+		outline: none;
+		background-color: rgb(255, 0, 0, 0.2);
+		/* opacity: 0.5; */
+		/* transparent: 0.3; */
+	}
+
+	&:after {
+		display: none !important;
+	}
+	margin-top: 50px;
+`;

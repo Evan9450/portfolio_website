@@ -35,32 +35,11 @@ const Header = () => {
 	return (
 		<StyledHeader>
 			<NavbarContainer>
-				{/* <Div1> */}
 				<NavLogo href="/">
-					{/* <Link> */}
 					<a style={{ display: 'flex', alignItems: 'center', color: 'white', size: '3rem' }}>
 						<AiOutlineFire size="3rem" color="red" /> <span>Evan</span>
 					</a>
-					{/* </Link> */}
 				</NavLogo>
-				{/* </Div1> */}
-				{/* <Div2>
-				<li>
-					<Link href="#projects">
-						<NavLink>Projects</NavLink>
-					</Link>
-				</li>
-				<li>
-					<Link href="#tech">
-						<NavLink>Technologies</NavLink>
-					</Link>
-				</li>
-				<li>
-					<Link href="#about">
-						<NavLink>About</NavLink>
-					</Link>
-				</li>
-			</Div2> */}
 				<NavMenu click={click} menuOpen={menuOpen}>
 					{navLinks &&
 						navLinks.map(({ url, name }, i) => (

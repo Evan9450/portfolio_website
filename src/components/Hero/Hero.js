@@ -1,11 +1,11 @@
+import { GetInTouch, LeftSection } from './HeroStyles';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
 import React from 'react';
 
 const Hero = () => (
-	<Section row nopadding style={{ marginTop: '80px' }}>
+	<Section nopadding style={{ marginTop: '80px' }}>
 		<LeftSection>
 			<SectionTitle main center>
 				Welcome To <br />
@@ -21,10 +21,15 @@ const Hero = () => (
 					style={{
 						color: '#ff0000',
 						fontFamily: 'Open Sans',
+						fontWeight: '500',
 					}}
 				>
 					Outz
 				</a>
+				<br />
+				<GetInTouch href={`mailto:evan9450@gmail.com`} style={{ fontWeight: '600' }}>
+					Get In Touch
+				</GetInTouch>
 			</SectionText>
 		</LeftSection>
 	</Section>
