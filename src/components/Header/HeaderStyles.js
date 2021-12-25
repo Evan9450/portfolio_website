@@ -4,15 +4,10 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
-	/* background: ${({ scrollNav }) => (scrollNav ? '#000000' : 'transparent')}; */
 	background: #000000;
 	height: 80px;
-	/* margin-top: -80px; */
-	/* display: flex; */
-	/* justify-content: center; */
 	font-size: 1.2rem;
-	/* align-items: center; */
-	position: fixed;
+	/* position: fixed; */
 	top: 0;
 	z-index: 11;
 	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
