@@ -69,7 +69,7 @@ const SideBar = () => {
 	};
 
 	const onResize = (e) => {
-		if (e.currentTarget.innerWidth > 768) {
+		if (e.currentTarget.innerWidth >= 640) {
 			setMenuOpen(false);
 		}
 	};
@@ -87,7 +87,7 @@ const SideBar = () => {
 	}, []);
 
 	const wrapperRef = useRef();
-	// useOnClickOutside(wrapperRef, () => setMenuOpen(false))
+	useOnClickOutside(wrapperRef, () => setMenuOpen(false));
 
 	return (
 		<StyledMenu>

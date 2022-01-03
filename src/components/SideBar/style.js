@@ -94,6 +94,7 @@ export const SideBarWrapper = styled.aside`
 		top: 0;
 		bottom: 0;
 		right: 0;
+		/* left: ${(props) => (props.menuOpen ? '' : '-100%')}; */
 		padding: 50px 10px;
 		width: min(75vw, 400px);
 		height: 100vh;

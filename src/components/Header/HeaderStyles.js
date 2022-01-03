@@ -37,23 +37,25 @@ export const StyledHeader = styled.header`
 	}
 `;
 
-export const NavbarContainer = styled(Container)`
+export const NavbarContainer = styled.nav`
 	display: flex;
 	justify-content: space-between;
 	position: relative;
 
-	/* height: 80px; */
-	padding: 0 0;
+	color: #ff0000;
+	/* font-family: var(--font-mono); */
+	counter-reset: item 0;
+	z-index: 12;
+	.logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-	${Container}
-`;
-export const Div1 = styled.div`
-	grid-area: 1 / 1 / 2 / 2;
-	display: flex;
-	flex-direction: row;
-	align-content: center;
-	@media ${(props) => props.theme.breakpoints.sm} {
-		grid-area: 1 / 1 / 2 / 3;
+		a {
+			color: #ff0000;
+			width: 42px;
+			height: 42px;
+		}
 	}
 `;
 
@@ -64,8 +66,9 @@ export const NavLogo = styled.a`
 	text-decoration: none;
 	font-size: 1.8rem;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	margin: 10px;
 
 	&:hover,
 	&:focus {
