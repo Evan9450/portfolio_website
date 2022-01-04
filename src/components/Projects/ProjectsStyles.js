@@ -9,10 +9,10 @@ export const Img = styled.img`
 
 export const GridContainer = styled.section`
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
 	padding: 3rem;
 	place-items: center;
-	column-gap: 2rem;
+	grid-gap: 15px;
 	row-gap: 3rem;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
@@ -20,13 +20,18 @@ export const GridContainer = styled.section`
 		padding: 2rem;
 		padding-bottom: 0;
 	}
+	@media (max-width: 1080px) {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
 `;
 export const BlogCard = styled.div`
-	border-radius: 10px;
-	background-color: #2e2e2e;
-	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+	/* border-radius: 10px; */
+	background-color: #000000;
+	/* box-shadow: 3px 3px 20px rgba(80, 80, 80, 0.5); */
 	text-align: center;
-	width: 400px;
+	padding: 20px;
+	width: auto;
+	max-width: 350px;
 
 	&:before {
 		content: '';
@@ -41,13 +46,22 @@ export const BlogCard = styled.div`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		width: 100%;
 	}
+	&:hover,
+	&:focus-within {
+		transform: translateY(-7px);
+	}
 `;
 export const TitleContent = styled.div`
 	text-align: center;
 	color: #ff0000;
 	z-index: 20;
 	width: 100%;
-	font-weight: 600;
+	font-weight: 400;
+	margin-top: 10px;
+	font-size: 14px;
+	.tag {
+		font-weight: 800;
+	}
 `;
 
 export const HeaderThree = styled.h3`
@@ -110,10 +124,16 @@ export const ExternalLinks = styled.a`
 
 export const TagList = styled.ul`
 	display: flex;
-	justify-content: space-around;
+	align-items: flex-end;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	padding: 0;
+	/* margin: 20px 0 0 0; */
+	list-style: none;
 	padding: 2rem;
 `;
 export const Tag = styled.li`
 	color: #d8bfbf;
 	font-size: 1.5rem;
+	margin-right: 10px;
 `;

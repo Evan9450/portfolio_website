@@ -1,55 +1,34 @@
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+// import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 
+import Icon from '../icons/Icon';
 import React from 'react';
+import { Tech } from '../../constants/constants';
 
 const Technologies = () => (
-	<Section id="tech" nopadding>
+	<Section id="tech">
 		<SectionDivider divider />
-		<SectionTitle>Technologies</SectionTitle>
+		<SectionTitle>
+			<span className="title-number">02.</span>Technologies
+		</SectionTitle>
 		<SectionText>
 			I've worked with a range a technologies in the web development world. From Back-end To Design
 		</SectionText>
 		<List>
-			<ListItem>
-				<picture>
-					<DiReact size="3rem" />
-				</picture>
-				<ListContainer>
-					<ListTitle>Front-End</ListTitle>
-					<ListParagraph>
-						Experiece with <br />
-						React.js
-					</ListParagraph>
-				</ListContainer>
-			</ListItem>
-			<ListItem>
-				<picture>
-					<DiFirebase size="3rem" />
-				</picture>
-				<ListContainer>
-					<ListTitle>Back-End</ListTitle>
-					<ListParagraph>
-						Experience with <br />
-						Node and Databases
-					</ListParagraph>
-				</ListContainer>
-			</ListItem>
-			<ListItem>
-				<picture>
-					<DiZend size="3rem" />
-				</picture>
-				<ListContainer>
-					<ListTitle>UI/UX</ListTitle>
-					<ListParagraph>
-						Experience with <br />
-						tools like Figma
-					</ListParagraph>
-				</ListContainer>
-			</ListItem>
+			{Tech.map(({ title, text }) => (
+				<ListItem>
+					<picture>
+						<Icon name={title} size="3rem" />
+					</picture>
+					<ListContainer>
+						<ListTitle>{title}</ListTitle>
+						<ListParagraph>{text}</ListParagraph>
+					</ListContainer>
+				</ListItem>
+			))}
 		</List>
-		{/* <SectionDivider /> */}
 	</Section>
 );
 

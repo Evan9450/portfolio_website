@@ -9,7 +9,7 @@ export const FooterWrapper = styled.footer`
 	min-height: 70px;
 	padding: 4rem 0 2rem 0;
 	text-align: center;
-	background: #000000;
+	background: #181818;
 `;
 
 export const FooterLink = styled.div`

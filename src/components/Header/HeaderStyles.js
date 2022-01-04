@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
-	background: #000000;
+	background: rgba(24, 24, 24);
 	height: 80px;
 	font-size: 1.2rem;
 	/* position: fixed; */
@@ -20,7 +20,7 @@ export const StyledHeader = styled.header`
 		css`
 			height: 80px;
 			transform: translateY(0px);
-			background-color: rgba(0, 0, 0, 0.7);
+			background-color: rgba(24, 24, 24, 0.7);
 			box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
 		`}
 	${(props) =>
@@ -40,7 +40,9 @@ export const StyledHeader = styled.header`
 export const NavbarContainer = styled.nav`
 	display: flex;
 	justify-content: space-between;
+	/* align-items: center; */
 	position: relative;
+	height: 100%;
 
 	color: #ff0000;
 	/* font-family: var(--font-mono); */
@@ -100,21 +102,20 @@ export const NavMenu = styled.ol`
 	margin: 0;
 	padding: 0;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 640px) {
 		display: none;
-		/* flex-direction: column;
-        width: 70%;
-        height: 90vh;
-        outline: 0;
-        position: fixed;
-        top: 80px;
-        right: ${({ click }) => (click ? 0 : '-100%')};
-        opacity: 1;
-        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-        background: #000000;
-        box-shadow: -10px 0px 30px -15px rgba(0, 0, 0, 0.7);
-        visibility: ${(props) => (props.menuOpen ? 'visible' : 'hidden')}; */
-		/* display: none; */
+		flex-direction: column;
+		width: 70%;
+		height: 90vh;
+		outline: 0;
+		position: fixed;
+		top: 80px;
+		right: ${({ click }) => (click ? 0 : '-100%')};
+		opacity: 1;
+		transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+		background: #000000;
+		box-shadow: -10px 0px 30px -15px rgba(0, 0, 0, 0.7);
+		visibility: ${(props) => (props.menuOpen ? 'visible' : 'hidden')};
 	}
 `;
 export const NavItem = styled.li`

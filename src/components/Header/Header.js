@@ -41,16 +41,13 @@ const Header = () => {
 			<NavbarContainer>
 				<div className="logo">
 					<a href="/" style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
-						<img
-							src="./logo.png"
-							style={{ height: '100%', width: '100%', marginTop: '20px', marginLeft: '20px' }}
-						/>
+						<img src="./logo.png" style={{ height: '100%', width: '100%', marginLeft: '20px' }} />
 					</a>
 				</div>
 				<NavMenu click={click} menuOpen={menuOpen}>
 					{navLinks &&
 						navLinks.map(({ url, name }, i) => (
-							<CSSTransition key={i}>
+							<CSSTransition key={i} timeout={200}>
 								<NavItem key={i}>
 									<NavLinks href={url}>{name}</NavLinks>
 								</NavItem>
