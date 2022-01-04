@@ -5,13 +5,15 @@ export const Section = styled.section`
 	flex-direction: ${(props) => (props.row ? 'row' : 'column')};
 	padding: ${(props) => (props.nopadding ? '0' : '32px 48px 0')};
 	margin: 0 auto;
+	/* min-height: 100vh; */
+
 	max-width: 1040px;
 	box-sizing: content-box;
 	position: relative;
 	overflow: hidden;
 	grid-template-columns: 1fr 1fr;
 
-	@media ${(props) => props.theme.breakpoints.md} {
+	/* @media ${(props) => props.theme.breakpoints.md} {
 		padding: 24px 48px 0;
 		flex-direction: column;
 	}
@@ -19,8 +21,14 @@ export const Section = styled.section`
 	@media ${(props) => props.theme.breakpoints.sm} {
 		padding: ${(props) => (props.nopadding ? '0' : '16px 16px 0')};
 
-		/* width: 100vw; */
+		width: 100vw;
 		flex-direction: column;
+	} */
+	.hero {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
 	}
 `;
 
@@ -36,19 +44,24 @@ export const SectionTitle = styled.h2`
 	margin-bottom: 16px;
 	padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
 
+	.numbered-heading {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
 	.title-number {
 		font-size: 22px;
 		color: #ff0000;
 		margin-right: 10px;
 	}
-	&::after {
-		content: '';
-		display: block;
-		position: relative;
-		width: 300px;
-		height: 1px;
+	.greeting {
+		font-size: 16px;
 		color: #ff0000;
-		top: -20px;
+	}
+	.big-heading {
+		line-height: 1.1;
+		margin: 0;
+		font-size: clamp(40px, 8vw, 80px);
 	}
 
 	/* @media ${(props) => props.theme.breakpoints.md} {
@@ -71,7 +84,7 @@ export const SectionTitle = styled.h2`
 
 export const SectionText = styled.p`
 	max-width: 800px;
-	font-size: 24px;
+	font-size: 18px;
 	line-height: 40px;
 	font-weight: 300;
 	padding-bottom: 3.6rem;

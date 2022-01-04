@@ -10,7 +10,7 @@ import { Tech } from '../../constants/constants';
 const Technologies = () => (
 	<Section id="tech">
 		<SectionDivider divider />
-		<SectionTitle>
+		<SectionTitle className="numbered-heading">
 			<span className="title-number">02.</span>Technologies
 		</SectionTitle>
 		<SectionText>

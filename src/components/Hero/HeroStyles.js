@@ -6,7 +6,7 @@ export const StyledHeroSection = styled.section`
 	/* text-align: center; */
 	flex-direction: column;
 	align-items: flex-start;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	padding: 0;
 
 	@media (max-width: 480px) and (min-height: 700px) {
@@ -29,12 +29,29 @@ export const LeftSection = styled.div`
 
 		margin: 0 auto;
 	}
+	h1 {
+		margin: 0 0 30px 4px;
+		font-size: clamp(14px, 5vw, 16px);
+		font-weight: 400;
+		@media (max-width: 480px) {
+			margin: 0 0 20px 2px;
+		}
+	}
+`;
+
+export const HeroTitle = styled.h1`
+	margin: 0 0 30px 4px;
+	font-size: clamp(14px, 5vw, 16px);
+	font-weight: 400;
+	@media (max-width: 480px) {
+		margin: 0 0 20px 2px;
+	}
 `;
 
 export const GetInTouch = styled.a`
 	color: #ff0000;
 	background-color: transparent;
-	border: 1px solid #ff0000;
+	border: 2px solid #ff0000;
 	border-radius: 4px;
 	display: inline-block;
 	position: relative;

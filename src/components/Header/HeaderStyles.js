@@ -102,20 +102,8 @@ export const NavMenu = styled.ol`
 	margin: 0;
 	padding: 0;
 
-	@media screen and (max-width: 640px) {
+	@media screen and (max-width: 768px) {
 		display: none;
-		flex-direction: column;
-		width: 70%;
-		height: 90vh;
-		outline: 0;
-		position: fixed;
-		top: 80px;
-		right: ${({ click }) => (click ? 0 : '-100%')};
-		opacity: 1;
-		transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-		background: #000000;
-		box-shadow: -10px 0px 30px -15px rgba(0, 0, 0, 0.7);
-		visibility: ${(props) => (props.menuOpen ? 'visible' : 'hidden')};
 	}
 `;
 export const NavItem = styled.li`
@@ -125,9 +113,9 @@ export const NavItem = styled.li`
 	counter-increment: item 1;
 	font-size: 13px;
 
-	&:hover {
-		/* border-bottom: 2px solid #4b59f7; */
-	}
+	/* &:hover {
+		border-bottom: 2px solid #4b59f7;
+	} */
 
 	@media screen and (max-width: 768px) {
 		display: flex;

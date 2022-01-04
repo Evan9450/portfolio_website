@@ -31,8 +31,8 @@ module.exports = {
 			url: '#tech',
 		},
 		{
-			name: 'About',
-			url: '#about',
+			name: 'Achievements',
+			url: '#Achievements',
 		},
 	],
 

@@ -5,11 +5,11 @@ import Button from '../../styles/GlobalComponents/Button';
 import React from 'react';
 
 const Hero = () => (
-	<Section nopadding style={{ marginTop: '80px' }}>
+	<Section className="hero" nopadding style={{ minHeight: 'calc(100vh - 80px)' }}>
 		<LeftSection>
 			<SectionTitle main center>
-				Welcome To <br />
-				Evan's Portfolio
+				<span className="greeting">Hi, my name is</span> <br />
+				<h2 className="big-heading">Evan Shi</h2>
 			</SectionTitle>
 			<SectionText>
 				I am a software developer based in Adelaide, SA. Currently, I am focused on building user-friendly,
@@ -20,7 +20,7 @@ const Hero = () => (
 					rel="noreferrer"
 					style={{
 						color: '#ff0000',
-						fontFamily: 'Open Sans',
+						// fontFamily: 'Open Sans',
 						fontWeight: '500',
 					}}
 				>
