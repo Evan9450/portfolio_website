@@ -19,7 +19,7 @@ const Footer = () => (
 			</ul>
 		</FooterLink>
 		<StyledCredit>
-			<small className="website-rights">Designed and build by Evan Shi </small>
+			<small className="website-rights">Designed and build by Evan (Liang) Shi </small>
 		</StyledCredit>
 	</FooterWrapper>
 );

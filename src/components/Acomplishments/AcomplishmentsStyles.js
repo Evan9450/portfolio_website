@@ -53,9 +53,12 @@ export const Box = styled.div`
 	}
 `;
 export const BoxNum = styled.h5`
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 18px;
 	line-height: 26px;
 	letter-spacing: 0.01em;
 	color: #ffffff;
@@ -66,7 +69,7 @@ export const BoxNum = styled.h5`
 		line-height: 32px;
 	} */
 	@media ${(props) => props.theme.breakpoints.sm} {
-		font-size: 24px;
+		font-size: 18px;
 		line-height: 26px;
 	}
 `;

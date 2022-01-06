@@ -9,7 +9,7 @@ const Hero = () => (
 		<LeftSection>
 			<SectionTitle main center>
 				<span className="greeting">Hi, my name is</span> <br />
-				<h2 className="big-heading">Evan Shi</h2>
+				<h2 className="big-heading">Liang Shi</h2>
 			</SectionTitle>
 			<SectionText>
 				I am a software developer based in Adelaide, SA. Currently, I am focused on building user-friendly,

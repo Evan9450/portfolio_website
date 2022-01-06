@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Section = styled.section`
 	display: ${(props) => (props.grid ? 'grid' : 'flex')};
 	flex-direction: ${(props) => (props.row ? 'row' : 'column')};
-	padding: ${(props) => (props.nopadding ? '0' : '32px 48px 0')};
+	padding: ${(props) => (props.nopadding ? '0' : '16px 24px 0')};
 	margin: 0 auto;
 	/* min-height: 100vh; */
 
@@ -43,7 +43,15 @@ export const SectionTitle = styled.h2`
 	-webkit-text-fill-color: transparent; */
 	margin-bottom: 16px;
 	padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
-
+	/* &::after {
+		content: '';
+		display: block;
+		position: relative;
+		top: -15px;
+		height: 2px;
+		margin-left: 20px;
+		background-color: rgba(255, 0, 0, 0.5);
+	} */
 	.numbered-heading {
 		display: flex;
 		align-items: center;
@@ -63,6 +71,8 @@ export const SectionTitle = styled.h2`
 		margin: 0;
 		font-size: clamp(40px, 8vw, 80px);
 	}
+	/* .title-main {
+	} */
 
 	/* @media ${(props) => props.theme.breakpoints.md} {
 		font-size: ${(props) => (props.main ? '56px' : '48px')};

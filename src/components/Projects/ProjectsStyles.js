@@ -10,14 +10,14 @@ export const Img = styled.img`
 export const GridContainer = styled.section`
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
-	padding: 3rem;
+	/* padding: 3rem; */
 	place-items: center;
 	grid-gap: 15px;
 	row-gap: 3rem;
 	@media ${(props) => props.theme.breakpoints.sm} {
 		display: flex;
 		flex-direction: column;
-		padding: 2rem;
+		/* padding: 2rem; */
 		padding-bottom: 0;
 	}
 	@media (max-width: 1080px) {
@@ -92,7 +92,7 @@ export const Intro = styled.div`
 
 export const CardInfo = styled.p`
 	width: 100%;
-	padding: 0 50px;
+	padding: 0 20px;
 	color: #e4e6e7;
 	font-style: 2rem;
 	line-height: 24px;
@@ -124,16 +124,17 @@ export const ExternalLinks = styled.a`
 
 export const TagList = styled.ul`
 	display: flex;
+	/* justify-content: space-between; */
 	align-items: flex-end;
 	flex-grow: 1;
 	flex-wrap: wrap;
 	padding: 0;
 	/* margin: 20px 0 0 0; */
 	list-style: none;
-	padding: 2rem;
+	padding: 15px 20px;
 `;
 export const Tag = styled.li`
 	color: #d8bfbf;
 	font-size: 1.5rem;
-	margin-right: 10px;
+	margin-right: 12px;
 `;
