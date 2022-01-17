@@ -54,21 +54,20 @@ const Header = () => {
 							</CSSTransition>
 						))}
 					<NavItemBtn>
-						{button ? (
-							<NavBtnLink to="../../static/resume.pdf">
-								<Button primary>Resume</Button>
-							</NavBtnLink>
-						) : (
-							<NavBtnLink to="../../static/resume.pdf">
-								<Button
-									// onClick={closeMobileMenu}
-									fontBig
-									primary
-								>
-									Resume
-								</Button>
-							</NavBtnLink>
-						)}
+						{/* {button ? ( */}
+						<NavBtnLink to="../../static/resume.pdf">
+							<Button primary>Resume</Button>
+						</NavBtnLink>
+						{/* // ) : (
+						// 	<NavBtnLink to="../../static/resume.pdf">
+						// 		<Button
+						// 			fontBig
+						// 			primary
+						// 		>
+						// 			Resume
+						// 		</Button>
+						// 	</NavBtnLink>
+						// )} */}
 					</NavItemBtn>
 				</NavMenu>
 				{/* <TransitionGroup component={null}>

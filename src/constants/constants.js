@@ -2,7 +2,7 @@ export const projects = [
 	{
 		title: 'Full stack blog',
 		description:
-			'A Full Stack MERN Application - using React, Node.js, Express & MongoDB. This is a personal blog that allows users to post, edit, like and delete blogs .',
+			'A Full Stack MERN Application - using React, Node.js, Express & MongoDB. This is a personal blog that allows users to post, edit, like and delete blogs.',
 		image: '/images/1.png',
 		tags: ['Mongo', 'Express', 'React', 'Node'],
 		source: 'https://evanblog.netlify.app/',
@@ -10,9 +10,9 @@ export const projects = [
 		id: 0,
 	},
 	{
-		title: 'App',
+		title: 'Movie Search',
 		description:
-			'A Full Stack MERN Application - using React, Node.js, Express & MongoDB. This is a personal blog that allows users to post, edit, like and delete blogs .',
+			'A Single page Application. This application allows users to search for movies by typing a title, filter movies/series by years as well as see full details of it.',
 		image: '/images/2.png',
 		tags: ['React', 'JavaScript'],
 		source: 'https://google.com',
@@ -20,22 +20,22 @@ export const projects = [
 		id: 1,
 	},
 	{
-		title: ' App',
+		title: ' Outz',
 		description:
-			'A Full Stack MERN Application - using React, Node.js, Express & MongoDB. This is a personal blog that allows users to post, edit, like and delete blogs .',
-		image: '/images/3.jpg',
-		tags: ['React', 'WebRTC'],
-		source: 'https://google.com',
+			'A South Australia based company. This is official website of it and it will give you access to saving on Dining, Karaoke, Beauty Therapy, Internet Cafes and much more!',
+		image: '/images/3.png',
+		tags: ['React'],
+		source: 'https://outz.com.au/',
 		// visit: 'https://google.com',
 		id: 2,
 	},
 	{
-		title: 'App',
+		title: 'Scan, order & pay',
 		description:
-			'A Full Stack MERN Application - using React, Node.js, Express & MongoDB. This is a personal blog that allows users to post, edit, like and delete blogs .',
-		image: '/images/4.jpg',
-		tags: ['React', 'ChatEngine', 'Firebase'],
-		source: 'https://google.com',
+			'A product of Outz. This is a smarter way to order & pay service and it allows you to scan the QR code to order dishes and pay online.',
+		image: '/images/4.png',
+		tags: ['React', 'redux', 'bootstrap'],
+		source: 'http://res.outz.com.au/r/:res=80&type=0',
 		// visit: 'https://google.com',
 		id: 3,
 	},
