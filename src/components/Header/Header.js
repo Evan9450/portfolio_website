@@ -54,27 +54,11 @@ const Header = () => {
 							</CSSTransition>
 						))}
 					<NavItemBtn>
-						{/* {button ? ( */}
-						<NavBtnLink to="../../static/resume.pdf">
+						<NavBtnLink target="_blank" href="/resume.pdf" rel="noopener noreferrer">
 							<Button primary>Resume</Button>
 						</NavBtnLink>
-						{/* // ) : (
-						// 	<NavBtnLink to="../../static/resume.pdf">
-						// 		<Button
-						// 			fontBig
-						// 			primary
-						// 		>
-						// 			Resume
-						// 		</Button>
-						// 	</NavBtnLink>
-						// )} */}
 					</NavItemBtn>
 				</NavMenu>
-				{/* <TransitionGroup component={null}>
-					<CSSTransition>
-						<SideBar />
-					</CSSTransition>
-				</TransitionGroup> */}
 			</NavbarContainer>
 		</StyledHeader>
 	);
