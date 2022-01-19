@@ -20,7 +20,6 @@ import { projects } from '../../constants/constants';
 
 const Projects = () => (
 	<Section id="projects">
-		<SectionDivider />
 		<SectionTitle main className="numbered-heading">
 			<span className="title-number">01.</span>
 			Projects

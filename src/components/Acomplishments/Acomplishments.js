@@ -13,8 +13,7 @@ const data = [
 
 const Acomplishments = () => (
 	<Section id="Achievements">
-		<SectionDivider divider />
-		<SectionTitle className="numbered-heading">
+		<SectionTitle main className="numbered-heading">
 			<span className="title-number">03.</span>Achievements
 		</SectionTitle>
 		<Boxes>

@@ -58,7 +58,31 @@ const GlobalStyles = createGlobalStyle`
       padding: 0 25px;
     }
   }
-  
+  .numbered-heading {
+		display: flex;
+		align-items: center;
+		position: relative;
+		/* &:before, */
+		&:after {
+			content: ' ';
+			display: block;
+			position: relative;
+      width: 300px;
+			/* top: -15px; */
+			height: 2px;
+			margin-left: 20px;
+			background-color: rgba(255, 0, 0, 0.5);
+      @media (max-width: 1080px) {
+        width: 200px;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      @media (max-width: 600px) {
+        margin-left: 10px;
+      }
+		}
+	}
 
 `;
 

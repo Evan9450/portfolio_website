@@ -1,4 +1,4 @@
-import { GetInTouch, LeftSection } from './HeroStyles';
+import { GetInTouch, HeroTitle, LeftSection } from './HeroStyles';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 
 import Button from '../../styles/GlobalComponents/Button';
@@ -7,10 +7,10 @@ import React from 'react';
 const Hero = () => (
 	<Section className="hero" nopadding style={{ minHeight: 'calc(100vh - 80px)' }}>
 		<LeftSection>
-			<SectionTitle main center>
+			<HeroTitle main center>
 				<span className="greeting">Hi, my name is</span> <br />
 				<h2 className="big-heading">Liang Shi</h2>
-			</SectionTitle>
+			</HeroTitle>
 			<SectionText>
 				I am a software developer based in Adelaide, SA. Currently, I am focused on building user-friendly,
 				human-centered and accessible products at{' '}

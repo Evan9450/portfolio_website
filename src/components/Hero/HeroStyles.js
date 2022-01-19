@@ -39,12 +39,31 @@ export const LeftSection = styled.div`
 	}
 `;
 
-export const HeroTitle = styled.h1`
-	margin: 0 0 30px 4px;
-	font-size: clamp(14px, 5vw, 16px);
-	font-weight: 400;
-	@media (max-width: 480px) {
-		margin: 0 0 20px 2px;
+// export const HeroTitle = styled.h1`
+// 	margin: 0 0 30px 4px;
+// 	font-size: clamp(14px, 5vw, 16px);
+// 	font-weight: 400;
+// 	@media (max-width: 480px) {
+// 		margin: 0 0 20px 2px;
+// 	}
+// `;
+export const HeroTitle = styled.h2`
+	font-weight: 600;
+	font-size: ${(props) => (props.main ? '32px' : '28px')};
+	line-height: ${(props) => (props.main ? '36px' : '28px')};
+	max-width: 100%;
+
+	margin-bottom: 16px;
+	padding: ${(props) => (props.main ? '58px 0 16px' : '0')};
+
+	.greeting {
+		font-size: 16px;
+		color: #ff0000;
+	}
+	.big-heading {
+		line-height: 1.1;
+		margin: 0;
+		font-size: clamp(40px, 8vw, 80px);
 	}
 `;
 

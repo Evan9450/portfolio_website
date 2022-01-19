@@ -22,9 +22,10 @@ import React, { useEffect, useState } from 'react';
 import { DiDigitalOcean } from 'react-icons/di';
 import Icon from '../icons/Icon';
 import { IconContext } from 'react-icons/lib';
-import Image from 'next/image';
 import SideBar from '../SideBar/SideBar';
 import { navLinks } from '../../config';
+
+// import Image from 'next/image';
 
 // import Logo from '../../static/Logo.png';
 
@@ -33,9 +34,7 @@ const Header = () => {
 
 	const [button, setButton] = useState(true);
 	const [menuOpen, setMenuOpen] = useState(false);
-	// const myLoader = ({ src, width, quality }) => {
-	// 	return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
-	// };
+
 	return (
 		<StyledHeader>
 			<NavbarContainer>
