@@ -4,8 +4,6 @@ import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-// import {
-
 const Icon = ({ name }) => {
 	switch (name) {
 		case 'GitHub':
@@ -26,8 +24,8 @@ const Icon = ({ name }) => {
 	}
 };
 
-Icon.propTypes = {
-	name: PropTypes.string.isRequired,
-};
+// Icon.propTypes = {
+// 	name: PropTypes.string.isRequired,
+// };
 
 export default Icon;
