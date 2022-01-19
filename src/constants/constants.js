@@ -14,7 +14,7 @@ export const projects = [
 			'A Single page Application. This application allows users to search for movies by typing a title, filter movies/series by years as well as see full details of it.',
 		image: '/images/2.png',
 		tags: ['React', 'JavaScript'],
-		source: 'https://github.com/Evan9450/movie-search',
+		source: 'https://omdbmovies-search.netlify.app/',
 		id: 1,
 	},
 	{
