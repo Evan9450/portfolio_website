@@ -1,6 +1,6 @@
 import { FooterLink, FooterWrapper, StyledCredit } from './FooterStyles';
 
-import Icon from '../icons/Icon';
+import Icon from '../Icon/Icon';
 import React from 'react';
 import { socialMedia } from '../../config';
 

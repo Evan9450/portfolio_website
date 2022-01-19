@@ -20,7 +20,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import React, { useEffect, useState } from 'react';
 
 import { DiDigitalOcean } from 'react-icons/di';
-import Icon from '../icons/Icon';
+import Icon from '../Icon/Icon';
 import { IconContext } from 'react-icons/lib';
 import SideBar from '../SideBar/SideBar';
 import { navLinks } from '../../config';

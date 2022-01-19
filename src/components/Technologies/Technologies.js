@@ -3,7 +3,7 @@
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 
-import Icon from '../icons/Icon';
+import Icon from '../Icon/Icon';
 import React from 'react';
 import { Tech } from '../../constants/constants';
 
