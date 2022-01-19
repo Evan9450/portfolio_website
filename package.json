@@ -17,5 +17,8 @@
     "react-transition-group": "^4.4.2",
     "styled-components": "^5.3.0",
     "styled-normalize": "^8.0.7"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.2.0"
   }
 }
