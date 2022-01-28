@@ -1,6 +1,8 @@
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { HiDatabase, HiPhotograph } from 'react-icons/hi';
 
+import { BsEmojiSmile } from 'react-icons/bs';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -13,19 +15,12 @@ const Icon = ({ name }) => {
 		case 'Linkedin':
 			return <AiFillLinkedin />;
 		case 'Front-End':
-			return <DiReact />;
+			return <HiPhotograph />;
 		case 'Back-End':
-			return <DiFirebase />;
+			return <HiDatabase />;
 		case 'UI/UX':
-			return <DiZend />;
-
-		// default:
-		//     return <IconExternal />;
+			return <BsEmojiSmile />;
 	}
 };
-
-// Icon.propTypes = {
-// 	name: PropTypes.string.isRequired,
-// };
 
 export default Icon;
