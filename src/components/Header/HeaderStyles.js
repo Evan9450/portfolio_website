@@ -15,6 +15,12 @@ export const StyledHeader = styled.header`
 	width: 100%;
 	backdrop-filter: blur(10px);
 	filter: none !important;
+	@media (max-width: 1080px) {
+		padding: 0 40px;
+	}
+	@media (max-width: 768px) {
+		padding: 0 25px;
+	}
 
 	${(props) =>
 		props.scrollDirection === 'up' &&
@@ -45,12 +51,7 @@ export const NavbarContainer = styled.nav`
 	/* align-items: center; */
 	position: relative;
 	height: 100%;
-	@media (max-width: 1080px) {
-		padding: 0 40px;
-	}
-	@media (max-width: 768px) {
-		padding: 0 25px;
-	}
+
 	color: #ff0000;
 	/* font-family: var(--font-mono); */
 	counter-reset: item 0;
