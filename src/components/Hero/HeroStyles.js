@@ -43,7 +43,7 @@ export const HeroLink = styled.a`
 	color: #ff0000;
 	font-weight: 500;
 	&:hover {
-		color: rgb(255, 0, 0, 0.2);
+		text-decoration: underline;
 	}
 `;
 export const HeroTitle = styled.h2`
