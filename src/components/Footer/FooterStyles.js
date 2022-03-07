@@ -34,6 +34,10 @@ export const FooterLink = styled.div`
 			a {
 				color: #ff0000;
 				padding: 10px;
+				&:hover,
+				&:focus {
+					transform: translateY(-3px);
+				}
 				svg {
 					width: 20px;
 					height: 20px;
