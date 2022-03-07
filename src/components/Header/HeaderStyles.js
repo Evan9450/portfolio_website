@@ -8,12 +8,14 @@ export const StyledHeader = styled.header`
 	height: 80px;
 	font-size: 1.2rem;
 	/* position: fixed; */
+	padding: 0px 50px;
 	top: 0;
 	z-index: 11;
 	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 	width: 100%;
 	backdrop-filter: blur(10px);
 	filter: none !important;
+
 	${(props) =>
 		props.scrollDirection === 'up' &&
 		!props.scrollToTop &&
@@ -43,7 +45,12 @@ export const NavbarContainer = styled.nav`
 	/* align-items: center; */
 	position: relative;
 	height: 100%;
-
+	@media (max-width: 1080px) {
+		padding: 0 40px;
+	}
+	@media (max-width: 768px) {
+		padding: 0 25px;
+	}
 	color: #ff0000;
 	/* font-family: var(--font-mono); */
 	counter-reset: item 0;

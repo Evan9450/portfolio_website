@@ -25,31 +25,33 @@ const Projects = () => (
 			Projects
 		</SectionTitle>
 		<GridContainer>
-			<TransitionGroup component={null}>
-				{projects.map(({ id, image, title, description, tags, source, visit }, index) => (
-					<a href={source} target="_blank">
-						<CSSTransition timeout={500} exit={false}>
-							<BlogCard key={id} className="project-inner">
-								<Img src={image} />
-								<TitleContent>
-									<HeaderThree>{title}</HeaderThree>
-									{/* <Hr /> */}
-									<br />
-									<CardInfo>{description}</CardInfo>
-									<div>
-										<TitleContent className="tag">Stack</TitleContent>
-										<TagList>
-											{tags.map((tag, i) => (
-												<Tag key={i}>{tag}</Tag>
-											))}
-										</TagList>
-									</div>
-								</TitleContent>
-							</BlogCard>
-						</CSSTransition>
-					</a>
-				))}
-			</TransitionGroup>
+			<CSSTransition timeout={{ enter: 500, exit: 300 }}>
+				<TransitionGroup component={null}>
+					{projects.map(({ id, image, title, description, tags, source, visit }, index) => (
+						<a href={source} target="_blank" key={title}>
+							<CSSTransition timeout={500}>
+								<BlogCard key={id} className="project-inner">
+									<Img src={image} />
+									<TitleContent>
+										<HeaderThree>{title}</HeaderThree>
+										{/* <Hr /> */}
+										<br />
+										<CardInfo>{description}</CardInfo>
+										<div>
+											<TitleContent className="tag">Stack</TitleContent>
+											<TagList>
+												{tags.map((tag, i) => (
+													<Tag key={i}>{tag}</Tag>
+												))}
+											</TagList>
+										</div>
+									</TitleContent>
+								</BlogCard>
+							</CSSTransition>
+						</a>
+					))}
+				</TransitionGroup>
+			</CSSTransition>
 		</GridContainer>
 	</Section>
 );

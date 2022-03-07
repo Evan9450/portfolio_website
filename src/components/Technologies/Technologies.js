@@ -17,7 +17,7 @@ const Technologies = () => (
 		</SectionText>
 		<List>
 			{Tech.map(({ title, text }) => (
-				<ListItem>
+				<ListItem key={title}>
 					<picture>
 						<Icon name={title} size="3rem" />
 					</picture>

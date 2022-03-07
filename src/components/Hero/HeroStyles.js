@@ -39,14 +39,13 @@ export const LeftSection = styled.div`
 	}
 `;
 
-// export const HeroTitle = styled.h1`
-// 	margin: 0 0 30px 4px;
-// 	font-size: clamp(14px, 5vw, 16px);
-// 	font-weight: 400;
-// 	@media (max-width: 480px) {
-// 		margin: 0 0 20px 2px;
-// 	}
-// `;
+export const HeroLink = styled.a`
+	color: #ff0000;
+	font-weight: 500;
+	&:hover {
+		color: rgb(255, 0, 0, 0.2);
+	}
+`;
 export const HeroTitle = styled.h2`
 	font-weight: 600;
 	font-size: ${(props) => (props.main ? '32px' : '28px')};

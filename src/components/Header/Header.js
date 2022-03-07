@@ -40,7 +40,7 @@ const Header = () => {
 			<NavbarContainer>
 				<div className="logo">
 					<a href="/" style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
-						<img src="./logo.png" style={{ height: '100%', marginLeft: '20px' }} />
+						<img src="./logo.png" style={{ height: '100%' }} />
 					</a>
 				</div>
 				<NavMenu click={click} menuOpen={menuOpen}>

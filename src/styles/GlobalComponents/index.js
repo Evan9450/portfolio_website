@@ -34,7 +34,7 @@ export const Section = styled.section`
 
 export const SectionTitle = styled.div`
 	font-weight: 600;
-	font-size: ${(props) => (props.main ? '32px' : '28px')};
+	font-size: clamp(24px, 5vw, 32px);
 	line-height: ${(props) => (props.main ? '36px' : '28px')};
 	max-width: 100%;
 

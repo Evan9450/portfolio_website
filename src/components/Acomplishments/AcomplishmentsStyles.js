@@ -31,10 +31,13 @@ export const Box = styled.div`
 		align-items: center;
 	}
 
-	/* border-radius: 12px; */
+	&:hover,
+	&:focus {
+		transform: translateY(-3px);
+	}
 	height: auto;
 	padding: 24px;
-	/* @media ${(props) => props.theme.breakpoints.lg} {
+	@media ${(props) => props.theme.breakpoints.lg} {
 		height: auto;
 	}
 
@@ -49,7 +52,7 @@ export const Box = styled.div`
 
 		&:nth-child(2n) {
 			grid-row: 2;
-		} */
+		}
 	}
 `;
 export const BoxNum = styled.h5`
