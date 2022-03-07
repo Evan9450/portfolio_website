@@ -118,7 +118,7 @@ const SideBar = () => {
 							</ol>
 						)}
 
-						<a href="/resume.pdf" className="resume-link">
+						<a target="_blank" href="/resume.pdf" rel="noopener noreferrer" className="resume-link">
 							Resume
 						</a>
 					</nav>

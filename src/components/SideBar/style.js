@@ -17,8 +17,8 @@ export const StyledHamburgerButton = styled.button`
 		align-items: center;
 		position: relative;
 		z-index: 10;
-		margin-right: 0.5rem;
-		padding: 25px 15px 15px 15px;
+		margin-right: -15px;
+		padding: 30px 15px 15px 15px;
 		border: 0;
 		background-color: transparent;
 		color: inherit;
@@ -94,13 +94,13 @@ export const SideBarWrapper = styled.aside`
 		top: 0;
 		bottom: 0;
 		right: 0;
-		/* left: ${(props) => (props.menuOpen ? '' : '-100%')}; */
+
 		padding: 50px 10px;
 		width: min(75vw, 400px);
 		height: 100vh;
 		outline: 0;
 		background-color: #000000;
-		box-shadow: -10px 0px 30px -15px rgba(0, 0, 0, 0.7);
+		box-shadow: -10px 0px 30px -15px rgba(0, 0, 0);
 		z-index: 9;
 		transform: translateX(${(props) => (props.menuOpen ? 0 : 100)}vw);
 		visibility: ${(props) => (props.menuOpen ? 'visible' : 'hidden')};

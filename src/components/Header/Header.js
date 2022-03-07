@@ -58,6 +58,11 @@ const Header = () => {
 						</NavBtnLink>
 					</NavItemBtn>
 				</NavMenu>
+				<TransitionGroup component={null}>
+					<CSSTransition timeout={200}>
+						<SideBar />
+					</CSSTransition>
+				</TransitionGroup>
 			</NavbarContainer>
 		</StyledHeader>
 	);
