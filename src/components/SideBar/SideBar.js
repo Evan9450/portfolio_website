@@ -108,11 +108,9 @@ const SideBar = () => {
 							<ol>
 								{navLinks.map(({ url, name }, i) => (
 									<li key={i}>
-										{/* expected Link here */}
-										{/* TODO */}
-										<a href={url} onClick={() => setMenuOpen(false)}>
-											{name}
-										</a>
+										<Link href={url}>
+											<a onClick={() => setMenuOpen(false)}>{name}</a>
+										</Link>
 									</li>
 								))}
 							</ol>

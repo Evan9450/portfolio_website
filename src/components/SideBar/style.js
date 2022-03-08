@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const StyledMenu = styled.div`
 	display: none;
+
 	@media (max-width: 768px) {
 		display: block;
 	}
@@ -30,8 +31,8 @@ export const StyledHamburgerButton = styled.button`
 	.ham-box {
 		display: inline-block;
 		position: relative;
-		width: 24px;
-		height: 18px;
+		width: 30px;
+		height: 24px;
 	}
 	.ham-box-inner {
 		position: absolute;
@@ -86,6 +87,7 @@ export const StyledHamburgerButton = styled.button`
 
 export const SideBarWrapper = styled.aside`
 	display: none;
+
 	@media (max-width: 768px) {
 		display: flex;
 		justify-content: center;
@@ -94,7 +96,6 @@ export const SideBarWrapper = styled.aside`
 		top: 0;
 		bottom: 0;
 		right: 0;
-
 		padding: 50px 10px;
 		width: min(75vw, 400px);
 		height: 100vh;
@@ -113,7 +114,6 @@ export const SideBarWrapper = styled.aside`
 		width: 100%;
 		flex-direction: column;
 		color: #ccd6f6;
-		/* font-family: var(--font-mono); */
 		text-align: center;
 	}
 	ol {
@@ -121,14 +121,17 @@ export const SideBarWrapper = styled.aside`
 		margin: 0;
 		list-style: none;
 		width: 100%;
+
 		li {
 			position: relative;
 			margin: 0 auto 20px;
 			counter-increment: item 1;
 			font-size: clamp(14px, 4vw, 18px);
+
 			@media (max-width: 600px) {
 				margin: 0 auto 10px;
 			}
+
 			&:before {
 				content: '0' counter(item) '.';
 				display: block;
