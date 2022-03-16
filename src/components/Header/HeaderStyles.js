@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
 	background: rgba(24, 24, 24);
 	height: 80px;
 	font-size: 1.2rem;
-	/* position: fixed; */
+	position: fixed;
 	padding: 0px 50px;
 	top: 0;
 	z-index: 11;

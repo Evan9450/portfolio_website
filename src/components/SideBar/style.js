@@ -17,7 +17,7 @@ export const StyledHamburgerButton = styled.button`
 		justify-content: center;
 		align-items: center;
 		position: relative;
-		z-index: 10;
+		z-index: 1000000000;
 		margin-right: -15px;
 		padding: 30px 15px 15px 15px;
 		border: 0;

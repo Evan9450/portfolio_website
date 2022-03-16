@@ -101,6 +101,7 @@ const SideBar = () => {
 						<div className="ham-box-inner" />
 					</div>
 				</StyledHamburgerButton>
+				{/* <Menu open={menuOpen} ref={navRef} /> */}
 
 				<SideBarWrapper menuOpen={menuOpen} aria-hidden={!menuOpen} tabIndex={menuOpen ? 1 : -1}>
 					<nav ref={navRef}>
