@@ -1,7 +1,8 @@
-import { Container } from '../../styles/GlobalComponents/index';
+import styled, { css } from 'styled-components';
+
+import { Container } from '../../../styles/GlobalComponents/index';
 import { IoIosArrowDropdown } from 'react-icons/io';
 import Link from 'next/link';
-import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
 	background: rgba(24, 24, 24);
@@ -36,8 +37,7 @@ export const StyledHeader = styled.header`
 		!props.scrollToTop &&
 		css`
 			height: 80px;
-			transform: translateY(calc(-80px) * -1);
-
+			transform: translateY(calc(80px) * -1);
 			box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
 		`}
         @media screen and (max-width: 768px) {

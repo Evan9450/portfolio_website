@@ -1,7 +1,5 @@
-// import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
-
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 
 import Icon from '../Icon/Icon';
 import React from 'react';

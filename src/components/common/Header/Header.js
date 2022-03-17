@@ -1,17 +1,9 @@
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineFire } from 'react-icons/ai';
 import {
 	Button,
-	Container,
-	Div1,
-	Div2,
-	Div3,
-	Nav,
 	NavBtnLink,
 	NavItem,
 	NavItemBtn,
-	NavLink,
 	NavLinks,
-	NavLogo,
 	NavMenu,
 	NavbarContainer,
 	StyledHeader,
@@ -19,24 +11,27 @@ import {
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import React, { useEffect, useState } from 'react';
 
-import { DiDigitalOcean } from 'react-icons/di';
-import Icon from '../Icon/Icon';
-import { IconContext } from 'react-icons/lib';
 import SideBar from '../SideBar/SideBar';
-import { navLinks } from '../../config';
-
-// import Image from 'next/image';
-
-// import Logo from '../../static/Logo.png';
+import { navLinks } from '../../../config';
+import { useScrollDirection } from '../hooks';
 
 const Header = () => {
 	const [click, setClick] = useState(false);
+	const scrollDirection = useScrollDirection('down');
+	const [scrolledToTop, setScrolledToTop] = useState(true);
 
-	const [button, setButton] = useState(true);
 	const [menuOpen, setMenuOpen] = useState(false);
 
+	const handleScroll = () => {
+		setScrolledToTop(window.pageYOffset < 50);
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+	}, []);
+
 	return (
-		<StyledHeader>
+		<StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop}>
 			<NavbarContainer>
 				<div className="logo">
 					<a href="/" style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
@@ -58,7 +53,6 @@ const Header = () => {
 						</NavBtnLink>
 					</NavItemBtn>
 				</NavMenu>
-				{/* <SideBar /> */}
 				<TransitionGroup component={null}>
 					<CSSTransition timeout={200}>
 						<SideBar />

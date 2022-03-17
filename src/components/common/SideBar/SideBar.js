@@ -2,12 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import { SideBarWrapper, StyledHamburgerButton, StyledMenu } from './style';
 
 import { Helmet } from 'react-helmet';
-import { KEY_CODES } from '../utilities';
+import { KEY_CODES } from '../../utilities';
 import Link from 'next/link';
-import { navLinks } from '../../config';
+import { navLinks } from '../../../config';
 import { useOnClickOutside } from '../hooks';
-
-// import { Link } from 'gatsby';
 
 const SideBar = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -101,7 +99,6 @@ const SideBar = () => {
 						<div className="ham-box-inner" />
 					</div>
 				</StyledHamburgerButton>
-				{/* <Menu open={menuOpen} ref={navRef} /> */}
 
 				<SideBarWrapper menuOpen={menuOpen} aria-hidden={!menuOpen} tabIndex={menuOpen ? 1 : -1}>
 					<nav ref={navRef}>
