@@ -24,7 +24,8 @@ export const Boxes = styled.div`
 `;
 
 export const Box = styled.div`
-	background: #000000;
+	background: #3f0000;
+	border-radius: 10px;
 	.label {
 		display: flex;
 		justify-content: center;
