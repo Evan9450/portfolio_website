@@ -10,6 +10,12 @@ const data = [
 		url: 'https://u16626658.ct.sendgrid.net/ls/click?upn=Smg0OV12w7AidGv-2Fy2WSIrkuESHuXWeUwEzEmUGKFTi12QcxYCx1QVy233DhrtkbTy-2BhUp3qmtxKLh8u0blw6yjWZmA-2Fe4FEjvKewIlLkro-3DebFn_JqNytvzu4acM4XvHZvV7DxciRex8WPg1v3WNjANHL3-2Baa8jUAJrwKF8timr7eKolNphOqpt0cbvloIuhb-2F9ko4BvhMaBa0wDYIk1zrLqMAdlLpNCyb31kOQg-2BifDaM8sGkRNAm4Wwb8OtaUrghF9x6-2FTQiy1NXHOZhuuNyXiLPxIsHoIzyybrvvxCtSwO901hporx07-2Bz9DbKZSlO1yJDw-3D-3D',
 		img: 'https://media.badgr.com/uploads/badges/assertion-gGqZuEhBRoOl0z9QweROZQ.png',
 	},
+	{
+		label: 'Responsive Web Design',
+		url: 'https://www.freecodecamp.org/certification/EvanSL/responsive-web-design',
+		img: 'https://media-exp1.licdn.com/dms/image/C4E0BAQGLKj3JHcof0w/company-logo_200_200/0/1589990867649?e=2147483647&v=beta&t=9qOE54XN9IU5KNvxPdXeu19S54q5XJCUFx1KFrM6NYE',
+	},
+	//Responsive Web Design
 ];
 
 const Acomplishments = () => (
