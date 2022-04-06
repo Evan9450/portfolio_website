@@ -8,7 +8,6 @@ const Social = () => {
 	return (
 		<Side orientation="left">
 			<SocialList>
-				{/* <ul> */}
 				{socialMedia &&
 					socialMedia.map(({ name, url }, i) => (
 						<li key={i}>
@@ -17,7 +16,6 @@ const Social = () => {
 							</a>
 						</li>
 					))}
-				{/* </ul> */}
 			</SocialList>
 		</Side>
 	);

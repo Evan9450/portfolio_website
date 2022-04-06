@@ -8,10 +8,10 @@ import { Tech } from '../../constants/constants';
 const Technologies = () => (
 	<Section id="tech">
 		<SectionTitle main className="numbered-heading">
-			<span className="title-number">02.</span>Technologies
+			Technologies
 		</SectionTitle>
 		<SectionText style={{ maxWidth: '100%' }}>
-			I've worked with a range of technologies in the web development world. From Back-end To Design
+			I've worked with a range of technologies in the web development world. From Back-end To Design.
 		</SectionText>
 		<List>
 			{Tech.map(({ title, text }) => (

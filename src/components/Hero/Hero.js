@@ -1,5 +1,5 @@
 import { GetInTouch, HeroLink, HeroTitle, LeftSection } from './HeroStyles';
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionText } from '../../styles/GlobalComponents';
 
 import React from 'react';
 import { email } from '../../config';

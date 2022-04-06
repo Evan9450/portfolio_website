@@ -1,27 +1,13 @@
-import {
-	BlogCard,
-	CardInfo,
-	ExternalLinks,
-	GridContainer,
-	HeaderThree,
-	Hr,
-	Img,
-	Tag,
-	TagList,
-	TitleContent,
-	UtilityList,
-} from './ProjectsStyles';
+import { BlogCard, CardInfo, GridContainer, HeaderThree, Img, Tag, TagList, TitleContent } from './ProjectsStyles';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionTitle } from '../../styles/GlobalComponents';
 
-import Link from 'next/link';
 import React from 'react';
 import { projects } from '../../constants/constants';
 
 const Projects = () => (
 	<Section id="projects">
 		<SectionTitle main className="numbered-heading">
-			<span className="title-number">01.</span>
 			Projects
 		</SectionTitle>
 		<GridContainer>
@@ -30,11 +16,10 @@ const Projects = () => (
 					{projects.map(({ id, image, title, description, tags, source, visit }, index) => (
 						<a href={source} target="_blank" key={title}>
 							<CSSTransition timeout={500}>
-								<BlogCard key={id} className="project-inner">
+								<BlogCard key={id} className="project-inner" style={{ transitionDelay: '100ms' }}>
 									<Img src={image} />
 									<TitleContent>
 										<HeaderThree>{title}</HeaderThree>
-										{/* <Hr /> */}
 										<br />
 										<CardInfo>{description}</CardInfo>
 										<div>

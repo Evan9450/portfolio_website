@@ -60,7 +60,21 @@ const GlobalStyles = createGlobalStyle`
 		display: flex;
 		align-items: center;
 		position: relative;
-		/* &:before, */
+		&:before {
+		  align-items: center;
+      position: relative;
+      counter-increment: section;
+      content: '0' counter(section) '.';
+      margin-right: 10px;
+      color: #ff0000;
+      font-size: clamp(16px, 3vw, 20px);
+      font-weight: 400;
+
+      @media (max-width: 480px) {
+        margin-bottom: -3px;
+        margin-right: 5px;
+      }
+    }
 		&:after {
 			content: ' ';
 			display: block;
