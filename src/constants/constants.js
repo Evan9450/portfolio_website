@@ -4,7 +4,7 @@ export const projects = [
 		description:
 			'A Full Stack MERN Application - using React, Node.js, Express & MongoDB. This is a personal blog that allows users to post, edit, like and delete blogs.',
 		image: '/images/1.png',
-		tags: ['Mongo', 'Express', 'React', 'Node', 'Heroku'],
+		tags: ['MongoDB', 'Express', 'React', 'Node', 'Heroku', 'MaterialUI'],
 		source: 'https://evanblog.netlify.app/',
 		id: 0,
 	},
@@ -22,7 +22,7 @@ export const projects = [
 		description:
 			'A South Australia based company. The official website of Outz and it will give you access to saving on Dining, Karaoke, Beauty Therapy, Internet Cafes and much more!',
 		image: '/images/3.png',
-		tags: ['React'],
+		tags: ['React', 'bootstrap'],
 		source: 'https://outz.com.au/',
 		id: 2,
 	},
