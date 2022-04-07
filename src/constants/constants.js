@@ -4,7 +4,7 @@ export const projects = [
 		description:
 			'A Full Stack MERN Application - using React, Node.js, Express & MongoDB. This is a personal blog that allows users to post, edit, like and delete blogs.',
 		image: '/images/1.png',
-		tags: ['Mongo', 'Express', 'React', 'Node'],
+		tags: ['Mongo', 'Express', 'React', 'Node', 'Heroku'],
 		source: 'https://evanblog.netlify.app/',
 		id: 0,
 	},
@@ -60,5 +60,4 @@ export const Achievements = [
 		url: 'https://www.freecodecamp.org/certification/EvanSL/responsive-web-design',
 		img: 'https://media-exp1.licdn.com/dms/image/C4E0BAQGLKj3JHcof0w/company-logo_200_200/0/1589990867649?e=2147483647&v=beta&t=9qOE54XN9IU5KNvxPdXeu19S54q5XJCUFx1KFrM6NYE',
 	},
-	//Responsive Web Design
 ];
