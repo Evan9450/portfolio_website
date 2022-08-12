@@ -52,8 +52,8 @@ export const Tech = [
 export const Achievements = [
 	{
 		label: 'GitLab Certified Associate',
-		url: 'https://u16626658.ct.sendgrid.net/ls/click?upn=Smg0OV12w7AidGv-2Fy2WSIrkuESHuXWeUwEzEmUGKFTi12QcxYCx1QVy233DhrtkbTy-2BhUp3qmtxKLh8u0blw6yjWZmA-2Fe4FEjvKewIlLkro-3DebFn_JqNytvzu4acM4XvHZvV7DxciRex8WPg1v3WNjANHL3-2Baa8jUAJrwKF8timr7eKolNphOqpt0cbvloIuhb-2F9ko4BvhMaBa0wDYIk1zrLqMAdlLpNCyb31kOQg-2BifDaM8sGkRNAm4Wwb8OtaUrghF9x6-2FTQiy1NXHOZhuuNyXiLPxIsHoIzyybrvvxCtSwO901hporx07-2Bz9DbKZSlO1yJDw-3D-3D',
-		img: 'https://media.badgr.com/uploads/badges/assertion-gGqZuEhBRoOl0z9QweROZQ.png',
+		url: 'https://www.credly.com/badges/75d4cacd-e074-44a8-83a0-9e9783b99312/public_url',
+		img: '/images/gitlab-certified-git-associate.png',
 	},
 	{
 		label: 'Responsive Web Design',

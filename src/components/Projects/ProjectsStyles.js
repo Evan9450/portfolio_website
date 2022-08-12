@@ -32,6 +32,7 @@ export const BlogCard = styled.div`
 	padding: 20px;
 	width: auto;
 	max-width: 350px;
+	min-height: 500px;
 
 	&:before {
 		content: '';
@@ -59,6 +60,7 @@ export const TitleContent = styled.div`
 	font-weight: 400;
 	margin-top: 10px;
 	font-size: 14px;
+
 	.tag {
 		font-weight: 800;
 	}

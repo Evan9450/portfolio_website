@@ -1,10 +1,13 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+import { css } from 'styled-components';
 
 export const Section = styled.section`
 	display: ${(props) => (props.grid ? 'grid' : 'flex')};
 	flex-direction: ${(props) => (props.row ? 'row' : 'column')};
 	padding: ${(props) => (props.nopadding ? '0' : '16px 24px 0')};
 	margin: 0 auto;
+
 	/* min-height: 100vh; */
 
 	max-width: 1040px;
@@ -13,17 +16,6 @@ export const Section = styled.section`
 	overflow: hidden;
 	grid-template-columns: 1fr 1fr;
 
-	/* @media ${(props) => props.theme.breakpoints.md} {
-		padding: 24px 48px 0;
-		flex-direction: column;
-	}
-
-	@media ${(props) => props.theme.breakpoints.sm} {
-		padding: ${(props) => (props.nopadding ? '0' : '16px 16px 0')};
-
-		width: 100vw;
-		flex-direction: column;
-	} */
 	.hero {
 		display: flex;
 		flex-direction: column;
